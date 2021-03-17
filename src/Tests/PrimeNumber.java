@@ -1,6 +1,5 @@
 package Tests;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -13,7 +12,6 @@ public class PrimeNumber {
         for (int i = 0; i < 100; i++) {
             numList[i] = i+1;
         }
-        System.out.println(Arrays.toString(numList));
 
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j <= i; j++) {
@@ -24,6 +22,7 @@ public class PrimeNumber {
             if(count==2) answer.add(numList[i]+"");
             count = 0;
         }
+        System.out.println(Arrays.toString(numList));
         System.out.println(answer);
     }
 }
