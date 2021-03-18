@@ -2,14 +2,14 @@ package Tests;
 
 import java.util.EmptyStackException;
 
-interface Stack{
+interface StackInteface{
     boolean isEmpty();
     String push(String data);
     String peek();
     String pop();
 }
 
-public class LinkedListStack implements Stack{
+public class LinkedListStack implements StackInteface{
     private Node top;
 
     public LinkedListStack() {
@@ -74,6 +74,7 @@ public class LinkedListStack implements Stack{
         if(listStack.isEmpty())  {
             listStack.push("1");
             listStack.push("2");
+            listStack.push("3");
             System.out.println(listStack.peek());
             listStack.pop();
             System.out.println(listStack.peek());
